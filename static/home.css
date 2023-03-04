@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #2f80ed, #8c43ff); /* Ajout de la propriété pour le dégradé de couleur */
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    background-color: #666666;
+}
+
+
+
+a:hover {
+    background-position: right center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+p:hover {
+    color: #ff5500;
+    cursor: pointer;
+}
+
+p:hover span {
+    animation: scale 0.5s ease;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+    100% {
+        background-position: 0% center;
+    }
+}
